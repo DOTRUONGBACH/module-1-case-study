@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic">
+    <link rel="stylesheet" type="text/css" href="css%20ikho.css"/>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #log {
+            text-align: center;
+        }
+
+        #banghang {
+            text-align: center;
+        }
+    </style>
+</head>
+
+
+<body onload=load()>
+<table style="font-family:'Bahnschrift';color: darkorange ;">
+    <tr>
+        <th>Kho của:</th>
+        <th id="hoten"></th>
+    </tr>
+</table>
+<h1 style="text-align: center">
+    <marquee>IKHO - Web quản lý kho số 1 thế giới</marquee>
+</h1>
+
+<br>
+<div>
+    <h4>
+        THÊM HÀNG HÓA
+    </h4>
+    Mã<input id="mamoi" placeholder="nhập mã">Tên<input id="tenmoi" placeholder="nhập tên">Đơn vị
+    <input placeholder="Chọn đơn vị" type="text" list="chondv" id="chondonvi">
+    <datalist id="chondv">
+        <option value="Cái"></option>
+        <option value="Bộ"></option>
+        <option value="Cân"></option>
+        <option value="Chai"></option>
+        <option value="Hộp"></option>
+        <option value="lít"></option>
+    </datalist>
+    Số lượng
+    <input placeholder="Nhập số lượng" id="slbandau" type="number">
+    <button
+            value="Thêm hàng"
+            onclick="themhang()">Thêm Hàng
+    </button>
+    <th width="100">
+    </th>
+</div>
+<br>
+<div><h4>KHO CỦA BẠN</h4>
+    <table id="banghang">
+        <tr>
+            <th width="100">
+                Mã
+            </th>
+            <th width="100">
+                Tên
+            </th>
+            <th width="100">
+                Đơn vị
+            </th>
+            <th width="100">
+                Số lượng
+            </th>
+        </tr>
+    </table>
+</div>
+<br>
+<div id="xuatnhap">
+    <h4>XUẤT NHẬP KHO</h4>
+    <input id="time1" placeholder="Nhập ngày tháng năm" type="date"><input onchange="onchange1(this.value)"
+                                                                           placeholder="Chọn mã" type="text"
+                                                                           list="chonmadata1"
+                                                                           id="chonma1">
+    <datalist id="chonmadata1">
+    </datalist>
+    <input id="hienten1">
+    <select id="chonxuatnhap">
+        <option>- Chọn -</option>
+        <option value="Xuất">Xuất</option>
+        <option value="Nhập">Nhập</option>
+    </select>
+    <input id="sl1" type="number"
+           placeholder="Nhập số lượng">
+    <button id="=xuatnhap" onclick="xuatnhap()">Xuất/Nhập</button>
+    <br>
+</div>
+<br>
+<div>
+    <h4>LOG</h4>
+    <table id="log">
+        <tr>
+            <th width="100">
+                Date
+            </th>
+            <th width="100">
+                Mã
+            </th>
+            <th width="100">
+                Tên
+            </th>
+            <th width="100">
+                Xuất/Nhập
+            </th>
+            <th width=100">
+                Số lượng
+            </th>
+        </tr>
+    </table>
+</div>
+<script src="js.js">
+</script>
+
+</body>
+</html>

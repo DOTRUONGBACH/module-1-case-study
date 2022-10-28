@@ -1,0 +1,92 @@
+body {
+    background-color: lightblue;
+}
+h1 {
+    background-image: url("https://media.istockphoto.com/photos/underground-concrete-hangar-tunnel-garage-realistic-background-sci-picture-id1321499097?b=1&k=20&m=1321499097&s=170667a&w=0&h=96NnoL7goRMGbNrq3UjbftQOP20ae6RsyzQJG0hHgK0=");
+    font-family: "Courier New", Courier, monospace;
+    font-size: 50px;
+    color: #73AD21;
+    text-shadow: -1px 0 black, 0 1px darkgoldenrod,      1px 0 black, 0 -1px darkgoldenrod;
+}
+
+div {
+    background-color: lightblue;
+}
+
+div {
+    background: rgba(0, 128, 0, 0.3) /* Green background with 30% opacity */
+}
+body {
+    background-image: url("https://img.freepik.com/free-photo/deep-blue-grid-cement-textured-wall-background_53876-104637.jpg?w=2000");
+}
+p.solid {border-style: solid;}
+div {
+    padding-top: 50px;
+    padding-right: 150px;
+    padding-bottom: 50px;
+    padding-left: 150px;
+}
+div {
+    width: 1000px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+}
+table, th, td {
+    border: 1px solid;
+    text-align: center;
+}
+table {
+    width: 100%;
+}
+tr:hover {background-color: coral;}
+div.relative {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border: 3px solid #73AD21;
+}
+div,
+
+.center {
+    margin: auto;
+    width: 70%;
+    border: 3px solid green;
+    padding: 10px;
+
+}
+
+.div1 {
+    background: red;
+}
+
+.div2 {
+    background: yellow;
+}
+
+.div3 {
+    background: green;
+}
+div {
+    overflow: scroll;
+}
+div {
+    background-color: antiquewhite;
+    color: black;
+}
+.jumbotron h1 {
+    text-align: left;
+    color: white;
+    font-size: 60px;
+    font-family: 'Shift', sans-serif;
+    font-weight: bold;
+    padding-top:20px;
+    padding-bottom:5px
+}
+
+.jumbotron p {
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+}
